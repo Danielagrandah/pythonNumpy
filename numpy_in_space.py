@@ -20,14 +20,14 @@ def numpy_in_space(arr: np.ndarray) -> dict:
 
     # TODO
 
-    result = (
-        f"Output:\n"
-        f"sqrt: {np.sqrt(arr)}\n"
-        f"exp : {np.exp(arr)}\n"
-        f"sin : {np.sin(arr)}\n"
-        f"cos : {np.cos(arr)}\n"
-        f"log : {np.log(arr)}")
-
+    result = {
+        'sqrt': f"Resultado de sqrt:\n{numpy_sqrt(arr)}",
+        'exp': f"Resultado de exp:\n{numpy_exp(arr)}",
+        'sin': f"Resultado de sin:\n{numpy_sin(arr)}",
+        'cos': f"Resultado de cos:\n{numpy_cos(arr)}",
+        'log': f"Resultado de log:\n{numpy_log(arr)}",
+    }
+    
     return result
 
 if __name__ == '__main__':
